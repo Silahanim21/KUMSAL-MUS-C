@@ -17,7 +17,7 @@ from os.path import dirname, isfile
 
 
 from config import EXTRA_PLUGINS, EXTRA_PLUGINS_FOLDER, EXTRA_PLUGINS_REPO
-from ayaz import LOGGER
+from YukkiMusic import LOGGER
 
 logger = LOGGER(name)
 
@@ -97,7 +97,7 @@ def __list_all_modules():
         modules = [
             (
                 (
-                    (f.replace(main_repo_plugins_dir, "ayaz.plugins")).replace(
+                    (f.replace(main_repo_plugins_dir, "YukkiMusic.plugins")).replace(
                         EXTERNAL_REPO_PATH, EXTRA_PLUGINS_FOLDER
                     )
                 ).replace(os.sep, ".")
