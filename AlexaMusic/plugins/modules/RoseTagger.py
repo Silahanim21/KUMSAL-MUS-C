@@ -12,7 +12,7 @@ tekli_calisan = []
 
 
 
-@client.on(events.NewMessage(pattern="^/mega$"))
+TAGGER_COMMAND = get_command("TAGGER_COMMAND")
 async def start(event):
   await event.reply("**EKİPTAGGERBOT**\n ile Grubunuzdakı Nerdeyse Tüm Üyelere Etiket Ata bilirim \nKomutlar için =======> /help yazın**",
                     buttons=(
