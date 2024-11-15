@@ -100,4 +100,4 @@ UNGBAN_COMMAND : ["ungban"]
 GBANNED_COMMAND : ["gbannedusers"]
 
 #tagger commands 
-TAGGER_COMMAND = get_command("utag")
+TAGGER_COMMAND : [ "utag" ]
