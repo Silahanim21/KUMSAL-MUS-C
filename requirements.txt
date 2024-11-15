@@ -1,3 +1,16 @@
+pyrogram
+python-dotenv
+motor
+pillow
+aiohttp
+aiofiles
+requests
+pyromod
+pymongo
+psutil
+emoji
+tglogging
+py-tgcalls
 aiohttp
 asyncio
 beautifulsoup4
@@ -13,7 +26,6 @@ pykeyboard
 py-tgcalls==2.0.4
 python-dotenv
 pyyaml
-requests
 speedtest-cli
 spotipy
 tgcrypto
