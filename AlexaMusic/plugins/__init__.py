@@ -17,7 +17,7 @@ from os.path import dirname, isfile
 
 
 from config import EXTRA_PLUGINS, EXTRA_PLUGINS_FOLDER, EXTRA_PLUGINS_REPO
-from YukkiMusic import LOGGER
+from AlexaMusic import LOGGER
 
 logger = LOGGER(name)
 
