@@ -41,7 +41,7 @@ from pyrogram.types import (
 
 from datetime import datetime as dt
 from datetime import timedelta, tzinfo, datetime
-from alexa import *
+from AlexaMusic import *
 import datetime
 
 
