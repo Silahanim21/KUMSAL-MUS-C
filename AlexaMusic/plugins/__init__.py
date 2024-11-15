@@ -19,7 +19,6 @@ from os.path import dirname, isfile
 from config import EXTRA_PLUGINS, EXTRA_PLUGINS_FOLDER, EXTRA_PLUGINS_REPO
 from AlexaMusic import LOGGER
 
-logger = LOGGER(name)
 
 
 if EXTRA_PLUGINS_FOLDER in os.listdir():
