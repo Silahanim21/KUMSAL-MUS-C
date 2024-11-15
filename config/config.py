@@ -98,7 +98,7 @@ EXTRA_PLUGINS = getenv(
 
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
-    "https://github.com/Silahanim21/Daha-fazla/tree/main/Plugins%2Fmahoaga",
+    "https://github.com/Silahanim21/extra-plugins",
 )
 # Fill here the external plugins repo where plugins that you want to load
 
