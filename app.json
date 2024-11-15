@@ -14,37 +14,37 @@
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "28217326",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "4800b862b4094e96f42a0b5dc2a558f8",
         "required": true
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
-        "value": "",
+        "value": "7592125217:AAGpFCI9if3xNwcydqraXhMhcYR3ZWqoocE",
         "required": true
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "5303133436",
+        "value": "7477017395",
         "required": true
       },        
       "MONGO_DB_URI": {
         "description": "Mongo DB URL",
-        "value": "",
+        "value": "mongodb+srv://kurt67143:DLArCT171SF9wRKJ@alexsoza.xpoqv.mongodb.net/?retryWrites=true&w=majority&appName=Alexsoza",
         "required": true
       },
       "MUSIC_BOT_NAME": {
         "description": "A name for your Music Bot.",
-        "value": "",
+        "value": "botmusic",
         "required": true
       },
       "STRING_SESSION": {
         "description": "A Pyrogram Session Get It From  Here @Session_Generator_Robot.",
-        "value": "",
+        "value": "BAE6FqgAamrO6hJnBrgFeVF2eV1JkmGp-1Brk9PJFyKuigC45aDLHNX9h9zfviVqrWEPqUH0AWE19ePakIt8mUeI-1PLFEO0Hn1unbQu9SoVFFpeaTUEf0guwL5ov9Y6pz6h92fd44yUNKND5iTZR7IdkmkHtcgJo3Psihna_8n-hp_CFD7LwJKqwJ0xF0FNValeDbS-oGrQ2IevKEZgfqGBc8ZYgvfHV5ql7QQB_DMpVmWEbJ8rwEn861R9FPGxUX4DZdEGXOyk-VJI8u3kjI_Md9VQ6eukTz95NMPucfg2QU1GyZlD89XJz5OIV70mge17ybmZEmRBxNbO17sLFTH5KStX-wAAAAG9qjszAA",
         "required": true
       },
       "HEROKU_API_KEY": {
@@ -59,12 +59,12 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/TheTeamAlexa/AlexaMusic",
+        "value": "https://github.com/Silahanim21/KUMSAL-MUS-C",
         "required": true
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "",
+        "value": "-1002422638645",
         "required": true
       },
       "EXTRA_PLUGINS": {
