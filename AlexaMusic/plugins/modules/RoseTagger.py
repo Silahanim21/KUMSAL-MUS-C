@@ -45,43 +45,7 @@ from AlexaMusic import *
 import datetime
 
 
-#-----------------------------------------------------------------------------
 
-logging.basicConfig(
-    level=logging.INFO, format="%(name)s - [%(levelname)s] - %(message)s"
-)
-LOGGER = logging.getLogger(__name__)
-
-API_ID = int(os.environ.get("API_ID", "3939406"))
-API_HASH = os.environ.get("API_HASH", "e11d0eaec136b1047974ab098041e9f2")
-BOT_TOKEN = os.environ.get("TOKEN", "7592125217:AAGpFCI9if3xNwcydqraXhMhcYR3ZWqoocE")  
-
-BOT_ID = int(os.environ.get("BOT_ID", "7592125217"))  
-
-BOT_USERNAME = os.environ.get("BOT_USERNAME", "Denemekocinrobot")  
-LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -1002244663689))  
-OWNER_ID = 7592125217  # Sahip hesabın id'si
-
-
-
-#-------------------------------------------------------------------------
-mongo_client = MongoClient("mongodb+srv://kurt67143:DLArCT171SF9wRKJ@alexsoza.xpoqv.mongodb.net/?retryWrites=true&w=majority&appName=Alexsoza")
-db = mongo_client["tagger_db"]
-blocked_collection = db["blocked"]   
-groups_collection = db["groups"]
-users_collection = db["users"]
-
-
-#-------------------------------------------------------------------------
-app = Client(
-    "RoseTagger", 
-    api_id=API_ID, 
-    api_hash=API_HASH, 
-    bot_token=BOT_TOKEN
-    )
-
-
-#-------------------------------------------------------------------------
 rose_tagger = {}
 
 users = []
