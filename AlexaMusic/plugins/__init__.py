@@ -11,14 +11,19 @@ as you want or you can collabe if you have new ideas.
 
 
 
-import os
 import glob
-from os.path import dirname, isfile
-
+import importlib
+import logging
+import os
+import shutil
+import subprocess
+import sys
+from os.path import abspath, dirname, isfile, join
 
 from config import EXTRA_PLUGINS, EXTRA_PLUGINS_FOLDER, EXTRA_PLUGINS_REPO
 from AlexaMusic import LOGGER
 
+logger = LOGGER(__name__)
 
 
 if EXTRA_PLUGINS_FOLDER in os.listdir():
