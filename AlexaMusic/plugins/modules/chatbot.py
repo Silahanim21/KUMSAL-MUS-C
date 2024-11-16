@@ -19,12 +19,12 @@ from telegram.ext import (
     Filters,
     MessageHandler,
 )
-from telegram.utils.helpers import mention_html
+from AlexaMusic.utils.helpers import mention_html
 
-import JarvisRobo.modules.sql.chatbot_sql as sql
-from JarvisRobo import BOT_ID, BOT_NAME, BOT_USERNAME, dispatcher
-from JarvisRobo.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from JarvisRobo.modules.log_channel import gloggable
+import AlexaMusic.modules.sql.chatbot_sql as sql
+from AlexaMusic import BOT_ID, BOT_NAME, BOT_USERNAME, dispatcher
+from AlexaMusic.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from AlexaMusic.modules.log_channel import gloggable
 from MukeshAPI import api
 
 @user_admin_no_reply
