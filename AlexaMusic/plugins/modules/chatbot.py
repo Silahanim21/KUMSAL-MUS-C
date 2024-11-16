@@ -3,7 +3,7 @@ import json
 import re
 from time import sleep
 import requests
-from AlexaMusic import (
+from config import (
     CallbackQuery,
     Chat,
     InlineKeyboardButton,
