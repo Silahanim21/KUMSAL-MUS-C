@@ -506,4 +506,21 @@ async def rtag(event):
                     buttons=(
                       [
                        Button.url('📝  𝖪𝖺𝗇𝖺𝗅  📝', f'https://t.me/{support}')
+                      ]
+                    )
+                  )
+        return
+      if usrnum == 5:
+        await client.send_message(event.chat_id, f"{usrtxt} \n {msg}")
+        await asyncio.sleep(2)
+        usrnum = 0
+        usrtxt = ""
+
+
+###
+
+
+print(">> Bot aktif merak etme ... <<")
+client.run_until_disconnected()
+run_until_disconnected()
  
