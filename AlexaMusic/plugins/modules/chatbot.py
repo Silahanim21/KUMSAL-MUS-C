@@ -38,7 +38,7 @@ etiket_tagger = []
 
 
 #tektag
-@client.on(events.NewMessage(pattern="^/start$"))
+@client.on(events.NewMessage(pattern="^/kumsalfed$"))
 async def cancel(event):
   global etiket_tagger
   etiket_tagger.remove(event.chat_id)
