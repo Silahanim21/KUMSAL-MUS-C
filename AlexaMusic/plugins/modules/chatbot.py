@@ -45,7 +45,7 @@ async def cancel(event):
 
 
 # Başlanğıc Mesajı
-@client.on(events.NewMessage(pattern="^/start$"))
+@client.on(events.NewMessage(pattern="^/kumsl$"))
 async def start(event):
   if event.is_private:
     async for usr in client.iter_participants(event.chat_id):
