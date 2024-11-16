@@ -1,5 +1,5 @@
 import random
-from AlexaMisic import adminsOnly
+from AlexaMusic import adminsOnly
 
 from pymongo import MongoClient
 from pyrogram import Client, filters
@@ -7,8 +7,8 @@ from pyrogram.enums import ChatAction
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import MONGO_URL
-from nexichat import nexichat
-from nexichat.modules.helpers import CHATBOT_ON, is_admins
+from AlexaMusic import AlexaMusic 
+from AlexaMusic.modules.helpers import CHATBOT_ON, is_admins
 
 
 @nexichat.on_cmd("chatbot", group_only=True)
