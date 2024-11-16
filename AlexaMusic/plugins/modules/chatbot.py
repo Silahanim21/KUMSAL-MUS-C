@@ -1,5 +1,5 @@
 import random
-AlexaMusic.utils.database
+form AlexaMusic.utils.database
 
 from pymongo import MongoClient
 from pyrogram import Client, filters
