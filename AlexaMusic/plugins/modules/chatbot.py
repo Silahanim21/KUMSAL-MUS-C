@@ -6,7 +6,7 @@ from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from telethon.tl.types import ChannelParticipantsAdmins
 from telethon.events import StopPropagation
-from config import client, USERNAME
+from configs import client, USERNAME, log_qrup, startmesaj, qrupstart, komutlar, sahib, support
 import heroku3
 import random
 import asyncio
