@@ -1,16 +1,3 @@
-# Copyright (C) 2024 by Alexa_Help @ Github, < https://github.com/TheTeamAlexa >
-# Subscribe On YT < Jankari Ki Duniya >. All rights reserved. © Alexa © Yukki.
-
-""""
-TheTeamAlexa is a project of Telegram bots with variety of purposes.
-Copyright (c) 2024 -present Team=Alexa <https://github.com/TheTeamAlexa>
-
-This program is free software: you can redistribute it and can modify
-as you want or you can collabe if you have new ideas.
-"""
-
-
-
 import glob
 import importlib
 import logging
@@ -21,7 +8,7 @@ import sys
 from os.path import abspath, dirname, isfile, join
 
 from config import EXTRA_PLUGINS, EXTRA_PLUGINS_FOLDER, EXTRA_PLUGINS_REPO
-from AlexaMusic import LOGGER
+from YukkiMusic import LOGGER
 
 logger = LOGGER(__name__)
 
@@ -32,7 +19,7 @@ if EXTRA_PLUGINS_FOLDER in os.listdir():
 if "utils" in os.listdir():
     shutil.rmtree("utils")
 
-ROOT_DIR = abspath(join(dirname(file), "..", ".."))
+ROOT_DIR = abspath(join(dirname(__file__), "..", ".."))
 
 EXTERNAL_REPO_PATH = join(ROOT_DIR, EXTRA_PLUGINS_FOLDER)
 
@@ -85,7 +72,7 @@ if extra_plugins_enabled:
 
 
 def __list_all_modules():
-    main_repo_plugins_dir = dirname(file)
+    main_repo_plugins_dir = dirname(__file__)
     work_dirs = [main_repo_plugins_dir]
 
     if extra_plugins_enabled:
@@ -101,13 +88,13 @@ def __list_all_modules():
         modules = [
             (
                 (
-                    (f.replace(main_repo_plugins_dir, "AlexaMusic.plugins")).replace(
+                    (f.replace(main_repo_plugins_dir, "YukkiMusic.plugins")).replace(
                         EXTERNAL_REPO_PATH, EXTRA_PLUGINS_FOLDER
                     )
                 ).replace(os.sep, ".")
             )[:-3]
             for f in mod_paths
-            if isfile(f) and f.endswith(".py") and not f.endswith("init.py")
+            if isfile(f) and f.endswith(".py") and not f.endswith("__init__.py")
         ]
         all_modules.extend(modules)
 
@@ -115,4 +102,4 @@ def __list_all_modules():
 
 
 ALL_MODULES = sorted(__list_all_modules())
-all = ALL_MODULES + ["ALL_MODULES"]
+__all__ = ALL_MODULES + ["ALL_MODULES"]
