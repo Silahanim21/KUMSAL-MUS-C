@@ -7,6 +7,9 @@ import subprocess
 import sys
 from os.path import abspath, dirname, isfile, join
 
+import glob
+from os.path import dirname, isfile
+
 from config import EXTRA_PLUGINS, EXTRA_PLUGINS_FOLDER, EXTRA_PLUGINS_REPO
 from YukkiMusic import LOGGER
 
